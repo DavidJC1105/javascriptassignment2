@@ -48,3 +48,37 @@ else{
     }else{console.log("Number 3 is the highest")}
 }
 
+let side1=Number(prompt("Enter the length of side one"))
+console.log(side1)
+let side2=Number(prompt("Enter the length of side 2"))
+console.log(side2)
+let side3=Number(prompt("Enter the length of side 3"))
+console.log(side3)
+
+if(side1==side2){
+    if(side2==side3){
+        console.log("This is an equalateral triangle")
+    }
+}
+if(side1==side2){
+    if(side1!=side3){
+        console.log("This is a scalene triangle")
+    }
+}
+if(side2==side3){
+    if(side2!=side1){
+        console.log("This is a scalene triangle")
+    }
+}
+if(side3==side1){
+    if(side3!=side2){
+        console.log("This is a scalene triangle")
+    }
+}
+if(side1!=side2){
+    if(side2!=side3){
+        if(side1!=side3){
+            console.log("This is an isoceles triangle")
+        }
+    }
+}
