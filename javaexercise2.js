@@ -45,7 +45,10 @@ if(number1>number2){
 else{
     if(number2>number3){
         console.log("Number 2 is the highest number")
-    }else{console.log("Number 3 is the highest")}
+    }
+    else if(number3>number2){
+        console.log("Number 3 is the highest")
+    }
 }
 
 let side1=Number(prompt("Enter the length of side one"))
@@ -82,3 +85,37 @@ if(side1!=side2){
         }
     }
 }
+
+let sumnumber1=Number(prompt("Enter the first number of your sum"))
+console.log(sumnumber1)
+let sumnumber2=Number(prompt("Enter the second number of your sum"))
+console.log(sumnumber2)
+let userchoice=prompt("What operation would you like")
+if(userchoice=="add"){
+    console.log(sumnumber1+sumnumber2)
+}
+else if(userchoice=="subtract"){
+   let order=prompt("Would you like sumnumber1 to be subtracted from sumnumber2")
+   if(order=="no"){
+    console.log(sumnumber2-sumnumber1)
+   }
+   else (console.log(sumnumber1-sumnumber2))
+}
+else if(userchoice=="multiply"){
+    console.log(sumnumber1*=sumnumber2)
+}
+else if(userchoice=="divide"){
+    let order2=prompt("Would you like sumnumber1 to be divided by sumnumber2")
+    if(order2=="no"){
+        console.log(sumnumber2/=sumnumber1)
+    }
+    else (console.log(sumnumber1/=sumnumber2))
+}
+else if(userchoice=="modulus"){
+    let order3=prompt("What number would you like to be divided by")
+    if(order3=="sumnumber1"){
+        console.log("The remainder is"sumnumber2%sumnumber1)
+    }
+    else(console.log("The remainder is"sumnumber1%sumnumber2))
+}
+else(console.log("Invalid operation"))
